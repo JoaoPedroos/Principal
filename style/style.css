@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #222;
+}
+/* NAVBAR */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(16, 16, 16);
+    width: 100%;
+    height: 90px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(81, 81, 81);
+    position: fixed;
+}
+.logo{
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    margin-left: 20px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+#nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: rgba(34, 34, 34, 0.706);
+
+}
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+#menu a{
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#btn-menu{
+    display: none;
+}
+
+/* PRINCIPAL */
+#main{
+    padding: 20px 20px;
+}
+#container{
+    height: calc(100vh - 150px);
+    display: flex;
+    margin-top: 30px;
+}
+#conteudoA{
+    padding: 40px 30px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+#conteudoB{
+    border-left: 1px solid rgb(81, 81, 81);
+    width: 50%;
+    height: 100%;
+}
+#apresentacao{
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#apresentacaoB{
+    border: 1px solid red;
+    width: 650px;
+}
+#imgmy{
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 5px 5px 55px rgb(39, 0, 146);
+    border: 3px solid rgb(39, 0, 146);
+}
+#imgmy:hover{
+    box-shadow: 5px 5px 55px rgb(2, 2, 97);
+    border: 3px solid rgb(2, 2, 97);
+    cursor: pointer;
+}
+#imgprim{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.titulo{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 50px 20px;
+    border-right: 1px solid gray;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 210px;
+    height: 25px;
+}
+.tituloA{
+    font-size: 18px;
+}
+#infomy{
+    margin-left: 70px;
+    color: white;
+    width: 80%;
+}
+
+/* Conteudo B*/
+
+#conteudoB{
+    padding: 25px 10px;
+}
+#tituloB{
+    color: white;  
+    display: flex;  
+    justify-content: center;
+    padding: 25px 10px;
+}
+.subt{
+    color: rgb(39, 0, 146);
+    text-decoration: underline;
+}
+.listinfoBprim{
+    margin: 15px 15px;
+}
+#buttonsobre{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#buttoncontato{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#buttoncontato:hover{
+    transition: 0.5s;
+    color: red;
+    border: 1px solid red;
+}
+#buttonsobre:hover{
+    transition: 0.5s;
+    color: red;
+    border: 1px solid red;
+}
+.buttonprojetos{
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    color: red;
+    font-size: 17px;
+    cursor: pointer;
+}
+.hoverinfo:hover{
+    color: red;
+}
+#infos{
+    color: white;
+}
+
+@media all and (max-width: 500px){
+    .logo{
+        font-size: 16px;
+    }
+    #info{
+        font-size: 23px;
+    }
+    #container{
+        height: auto;
+    }
+    #infomy{
+        margin-left: 35px;
+        color: white;
+        width: 80%;
+    }
+    .titulo{
+        width: 220px;
+    }
+        #tituloB{
+        font-size: 13px;
+    }
+    .subt{
+        font-size: 18px;
+    }
+    #buttonsobre{
+        width: 60px;
+    }
+    .listinfoBprim{
+        font-size: 15px;
+    }
+    #btn-menu{
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 600px){
+    /* NAVBAR */
+    #menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0px;
+        background: rgb(16, 16, 16);
+        z-index: 1000;
+        transition: 0.6s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        position: fixed;
+    }
+    #nav.active #menu{
+        height: calc(245px);
+        visibility: visible;
+        overflow-y: auto;
+        display: block;
+    }
+    #menu a{
+        padding: 20px 5px;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(24, 24, 24, 0.747);
+    }
+    #btn-menu{
+        display: flex;
+        padding: 13px;
+        font-size: 17px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        gap: 5px;
+    }
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid white;
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px ;
+        background: white;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(140deg);
+        top: -4px;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(-140deg);
+        top: 3px;
+    }
+    /* FIM NAVBAR */
+
+    /* PRINCIPAL */
+    #main{
+        padding: 10px 10px;
+    }
+    #conteudoA{
+        width: 100%;
+        padding: 20px 15px;
+    }
+    /**/
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        font-size: 23px;
+    }
+}
+@media all and (max-width: 750px){
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #conteudoA{
+        width: 100%;
+    }
+    #conteudoB{
+        width: 100%;
+        border-left: 0;
+        border-top: 1px solid rgb(81, 81, 81);
+    }
+    
+}  
+
+@media all and (max-width: 935px){
+    .tituloA{
+        font-size: 18px;
+    }
+    #imgmy{
+        width: 250px;
+        height: 250px;
+    }
+    #infomy{
+        margin-left: 16px;
+        width: 100%;
+    }
+    #info{
+        font-size: 18px;
+    }
+    .titulo{
+        margin: 50px 20px;
+    }
+    .logo{
+        font-size: 19px;
+        margin-right: 25px;
+    }
+}
+@media all and (max-width: 281px){
+    .logo{
+        margin: 0;
+        font-size: 13px;
+        width: 280px;
+    }
+    .titulo{
+        margin: 50px 10px;
+        width: 100%;
+    }
+    .tituloA{
+        font-size: 20px;
+        
+    }
+    #imgmy{
+        width: 190px;
+        height: 190px;
+    }
+    #info{
+        font-size: 18px;
+    }
+    #conteudoB{
+        height: auto;
+    }
+    #tituloB{
+        font-size: 13px;
+    }
+    .subt{
+        font-size: 18px;
+    }
+    #buttonsobre{
+        width: 60px;
+    }
+    .listinfoBprim{
+        font-size: 15px;
+    }
+    #btn-menu{
+        font-size: 12px;
+    }
+}
+
+/* A n i m a ç ã o */
+.typing-animation{
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 3s steps(40) 1s both;
+}
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgb(255, 255, 255);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0px;
+    }
+    to{
+        width: 205px;
+    }
+}
+
+/* Projetos */
+
+#mainprojeto{
+    border: 1px solid red;
+    margin-top: 100px;
+}
+
+
+
