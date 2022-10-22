@@ -112,15 +112,10 @@ a:hover{
 }
 .titulo{
     display: block;
-    justify-content: center;
-    text-align: center;
     color: white;
-    margin: 50px 20px;
     border-right: 1px solid gray;
     overflow: hidden;
     white-space: nowrap;
-    margin-left: 210px;
-    height: 25px;
 }
 .tituloA{
     font-size: 18px;
@@ -551,7 +546,7 @@ a:hover{
 }
 .modal{
     width: 800px;
-    height: auto;
+    height: 600px;
     position: relative;
     margin: 10% auto;
     padding: 15px 20px;
