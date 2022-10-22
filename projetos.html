@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Projetos</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -13,7 +13,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
         </style>
-    <link rel="stylesheet" href="/style/stylep.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -24,16 +24,118 @@
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="mainprojeto">
-
+    <main class="mainproj">
+        <div class="containerproj">
+            <div class="projetos">
+                <div id="formatoprojetos">
+                    <div class="boxs p1">
+                        <img class="imgpj" src="imgs/img.png" alt="">
+                        <h3 class="textprojeto">01 - DEVCHALLENGER </h3>
+                        <h4 class="textsecprojeto">Music Library Page</h4>
+                        <a href="#abrirmodalone" class="buttonvisu">Visualizar</a>
+                    </div>
+                    <div class="boxs p2">
+                        <img class="imgpj" src="imgs/imgsecprojeto.png" alt="">
+                        <h3 class="textprojeto">02 - DEVCHALLENGER </h3>
+                        <h4 class="textsecprojeto">Selfcare</h4>
+                        <a href="#abrirmodalsec" class="btn2">Visualizar</a>
+                    </div>
+                    <div class="boxs p3">
+                        <img class="imgpj" src="imgs/imgterprojeto.png" alt="">
+                        <h3 class="textprojeto">03 - Formulário </h3>
+                        <h4 class="textsecprojeto">Cadastro de Usuários</h4>
+                        <a href="#abrirmodalter" class="buttonvisu">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <div  id="abrirmodalone" class="fade">
+        <div class="modal">
+            <a href="#fechar" class="fechar">X</a>
+            <div class="titulomodal">
+                <h2>DEVCHALLENGER - Music Library Page</h2>
+            </div>
+            <div class="mainmodal">
+                <div class="lineimg">
+                    <div class="columnimg">
+                        <div class="firstimg">
+                            <h2>Meu Projeto</h2>
+                            <img class="imgmodal primeira" src="imgs/primeirapartep1.png" alt="">
+                            <p>clique na imagem</p>
+                        </div>
+                        <div class="firstimg h2img">
+                            <h2>DEVCHALLENGER</h2>
+                            <img class="imgmodal segunda" src="imgs/segundapartep1.png" alt="">
+                            <p>clique na imagem</p>
+                        </div>
+                    </div>
+                    <div class="containerprogress">
+                        <h2>Progresso</h2>
+                        <div class="barraprogress">
+                            <div class="progress"></div><label class="porcent" for="">+</label>
+                        </div>
+                    </div>
+                    <div class="complementomodal">
+                        <div>
+                            <h2>Próximas Atualizações</h2>
+                        </div>
+                        <div>
+                            <h3>- Fazer o Carrossel (2)</h3>
+                            <h3>- Fazer a Responsividade</h3>
+                            <h3>- Melhorar o Design</h3>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  id="abrirmodalsec" class="fade">
+        <div class="modal">
+            <a href="#fechar" class="fecharbtn2 fechar">X</a>
+            <div class="titulomodal">
+                <h2>DEVCHALLENGER - Selfcare</h2>
+            </div>
+            <div class="mainmodal">
+                <div class="lineimg">
+                    <div class="columnimg">
+                        <div class="firstimg">
+                            <h2>Meu Projeto</h2>
+                            <img class="imgmodal primeiras" src="imgs/imgsecprojeto.png" alt="">
+                            <p>clique na imagem</p>
+                        </div>
+                        <div class="firstimg h2img">
+                            <h2>DEVCHALLENGER</h2>
+                            <img class="imgmodal segundas" src="imgs/imgsecprojeto.png" alt="">
+                            <p>clique na imagem</p>
+                        </div>
+                    </div>
+                    <div class="containerprogress">
+                        <h2>Progresso</h2>
+                        <div class="barraprogress">
+                            <div class="progresssegundo"></div><label class="porcentsegundo" for="">+</label>
+                        </div>
+                    </div>
+                    <div class="complementomodal">
+                        <div>
+                            <h2>Próximas Atualizações</h2>
+                        </div>
+                        <div>
+                            <h3>- Fazer Navbar</h3>
+                            <h3>- Fazer a Main</h3>
+                            <h3>- Fazer a Responsividade</h3>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
